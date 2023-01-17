@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Non Primitive data to render">
+        <div class="slds-m-around_medium">
+            <template for:each={detailObj} for:item="item">
+                <div class="slds-p-vertical_medium" key={item.id}>
+                    <p>Name : {item.name}</p>
+                    <p>Surname : {item.surname}</p>
+                    <p>Qualification : {item.qualification}</p>
+                    <p>Skills : {item.skills}</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

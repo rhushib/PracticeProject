@@ -1,0 +1,81 @@
+<template>
+    <lightning-card title="Full Calculator">
+        <lightning-card>
+            <div class="slds-box">{result}</div>
+        </lightning-card>
+        <div class="slds-m-around_medium">
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                     <lightning-button label="1" name="one" value="1" variant="brand" onclick={handleClick} 
+                     class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="2" name="two" value="2" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="3" name="three" value="3" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="+" name="plus" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                     <lightning-button label="4" name="four" value="4" variant="brand" onclick={handleClick} 
+                     class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="5" name="five" value="5" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="6" name="six" value="6" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="-" name="minus"  variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                     <lightning-button label="7" name="seven" value="7" variant="brand" onclick={handleClick} 
+                     class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="8" name="eight" value="8" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="9" name="nine" value="9" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="*" name="multiply"  variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                     <lightning-button label="CLR" name="clear"  variant="brand" onclick={handleClick} 
+                     class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="0" name="zero" value="0" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="=" name="equal" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="/" name="divide" variant="brand" onclick={handleClick} 
+                    class="custom-box slds-box slds-p-around_medium slds-text-align_center slds-col slds-size_3-of-12"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>           
+        </div>
+    </lightning-card>
+</template>

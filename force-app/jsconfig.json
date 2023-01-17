@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "module": "ES2020"
+    },
+    "exclude": [
+        ".vscode",
+        "logs",
+        "node_Modules",
+    ],
+}

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Mock interview question 1">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+            key-field="Id"
+            data={accounts}
+            columns={columns}
+            onrowselection={selectHandler}
+            ></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

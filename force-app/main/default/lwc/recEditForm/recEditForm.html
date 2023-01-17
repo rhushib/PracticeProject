@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Record Edit Form">
+        <div class="slds-m-around_medium">
+            <lightning-record-edit-form
+            object-api-name={objectName}
+            onsuccess={successHandler}
+            >
+            <lightning-input-field field-name={fields.First}></lightning-input-field>
+            <lightning-input-field field-name={fields.Last}></lightning-input-field>
+            <lightning-input-field field-name={fields.MailField}></lightning-input-field>
+            <lightning-input-field field-name={fields.PhoneField}></lightning-input-field>
+            <lightning-button label="Cancel" onclick={resetHandler} class="slds-m-around_small" ></lightning-button>
+            <lightning-button label="Save"  class="slds-m-around_small" variant="brand" type="submit" ></lightning-button>
+        </lightning-record-edit-form>   
+        </div>
+    </lightning-card>
+</template>

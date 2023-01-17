@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Get record Module">
+        <div class="slds-m-around_medium">
+            <template for:each={formFields} for:item="fields">
+                <div key={fields.label}>
+                    <p><strong>{fields.label}</strong></p>
+                    <p>{fields.value}</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
